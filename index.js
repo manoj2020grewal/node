@@ -7,14 +7,12 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 
 
-const ActivateRoutes = require("./routes/index")
 
-ActivateRoutes(app)
 
 
 
 app.listen(port, () => {
-  console.log(`node is running at http://localhost:${port}`)
+  console.log(`node is running at ${port}`)
 })
 
 //for use html in node js
